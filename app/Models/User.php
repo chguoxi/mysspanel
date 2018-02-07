@@ -56,6 +56,9 @@ class User extends Model
         }
     }
 
+    /**
+     * 用户等级
+     */
     public function userLevel()
     {
 		$level = $this->attributes['type'];
