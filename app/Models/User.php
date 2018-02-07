@@ -58,8 +58,8 @@ class User extends Model
 
     public function userLevel()
     {
-	$level = $this->attributes['level'];
-        $levelinfo = UserLevel::where('level',$level)->get();
+		$level = $this->attributes['type'];
+        $levelinfo = UserLevel::where('id',$level)->get();
         return $levelinfo[0]['name'];
     }
 
