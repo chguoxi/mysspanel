@@ -58,6 +58,7 @@ class User extends Model
 
     /**
      * 用户等级
+     * test
      */
     public function userLevel()
     {
